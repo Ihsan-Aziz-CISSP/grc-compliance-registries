@@ -12,7 +12,9 @@ This repository serves as a functional, production-ready blueprint for an enterp
 ### 2. 📖 Operational Playbooks (`/playbooks`)
 * **`ai_governance_intake_procedure.md`**: Step-by-step procedure for triaging, evaluating, and risk-tiering AI Agent and LLM use cases while managing shadow AI consequences.
 * **`external_assurance_audit_readiness.md`**: Standard operating procedure for continuous multi-framework evidence mapping (SOC 2, PCI-DSS v4.0, NIST CSF) and pre-audit evidence sanitization.
-  * stakeholder_user_guide.md: A simple, jargon-free guide explaining how business leaders, engineers, lawyers, and auditors should navigate and utilize this repository.*### 3. 🗃️ Risk Registries (`/registries`)
+* **`stakeholder_user_guide.md`**: A simple, jargon-free guide explaining how business leaders, engineers, lawyers, and auditors should navigate and utilize this repository.
+
+### 3. 🗃️ Risk Registries (`/registries`)
 * **`ai_agents_risk_matrix.csv`**: Direct mapping of advanced AI agent liabilities, focusing on OWASP Top 10 LLM risks like indirect prompt injection and excessive agency.
 * **`healthcare_ai_compliance.csv`**: Strict controls tracking patient data privacy (PHI), local de-identification pipelines, and clinical Human-in-the-Loop workflows mapped to HIPAA (45 CFR).
 * **`legislative_readiness.csv`**: A forward-looking regulatory tracking framework explicitly addressing compliance milestones and watermarking requirements for the EU AI Act.
