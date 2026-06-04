@@ -18,9 +18,12 @@ This repository serves as a functional, production-ready blueprint for an enterp
 * **`healthcare_ai_compliance.csv`**: Strict controls tracking patient data privacy (PHI), local de-identification pipelines, and clinical Human-in-the-Loop workflows mapped to HIPAA (45 CFR).
 * **`legislative_readiness.csv`**: A forward-looking regulatory tracking framework explicitly addressing compliance milestones and watermarking requirements for the EU AI Act.
 
+### 4. 🏢 Compliance Frameworks (`/frameworks`)
+* **`third_party_vendor_assessment.md`**: A comprehensive security vetting and risk-scoring questionnaire built to evaluate IT vendor performance, data governance, SOC 2 reports, and HIPAA BAA configurations.
+
 ---
 
 ## 🚀 Core Value & Technical Skills Demonstrated
 * **GitOps GRC Alignment:** Shifting compliance out of static spreadsheets and into version-controlled engineering environments.
 * **Multi-Framework Synthesis:** Ability to map technical controls simultaneously across NIST CSF, HIPAA, SOC 2, PCI-DSS, and global statutory bodies.
-* **Queue & Portfolio Mastery:** Demonstrating clear methodologies for triaging high-volume technical requests and tracking root-cause remediation data.
+* **Queue & Portfolio Mastery:** Demonstrating clear methodologies for triaging high-volume technical requests, vetting third-party suppliers, and tracking root-cause remediation data.
