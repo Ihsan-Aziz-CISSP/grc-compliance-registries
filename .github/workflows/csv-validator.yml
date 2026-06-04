@@ -1,0 +1,45 @@
+name: GRC CSV Validation Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  validate-csv:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python Environment
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Execute Column Consistency Check
+      run: |
+        python -c "
+        import csv
+        import sys
+        import glob
+
+        files = glob.glob('registries/*.csv') + glob.glob('metrics/*.csv')
+        errors = 0
+
+        for file in files:
+            with open(file, 'r', encoding='utf-8') as f:
+                reader = csv.reader(f)
+                header = next(reader)
+                expected_cols = len(header)
+                
+                for row_idx, row in enumerate(reader, start=2):
+                    if len(row) != expected_cols:
+                        print(f'❌ ERROR in {file}: Row {row_idx} has {len(row)} columns, expected {expected_cols}')
+                        errors += 1
+        if errors:
+            sys.exit(1)
+        print('✅ All GRC registries passed structural validation checks successfully.')
+        "
