@@ -1,0 +1,6 @@
+Metric ID,Queue Category,Performance Target (SLA),Current Quarter Actual,Status,Root Cause / Corrective Action Plan
+METRIC-01,AI Intake Request Triage,< 48 Hours,31 Hours,On Target,N/A - Automated intake workflow optimization successful.
+METRIC-02,SOC 2 Evidence Collections Task Closure,< 5 Business Days,7.2 Days,Delayed,Delayed response from engineering teams during cloud migration. Action: Implementing automated Slack escalation pings.
+METRIC-03,PCI-DSS Non-Conformity Ticket Resolution,< 14 Days,11 Days,On Target,N/A - Critical patches applied successfully within maintenance windows.
+METRIC-04,AI Acceptable Use Training Completion Rates,> 98% Employee Sign-off,92%,At Risk,New hires in administrative units missing deadline. Action: Triggering automated HR system email reminders weekly.
+METRIC-05,NIST CSF Maturity Level (Identity & Access Control),Level 4 (Measured),Level 3.5 (Defined),In Progress,Privileged Access Reviews are currently manual. Action: Migrating tracking to an identity governance platform by Q4.
